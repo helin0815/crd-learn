@@ -12,6 +12,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	// 引入自定义资源类型
+
 	hltestv1 "hltest-operator/api/v1" // 替换为你的实际路径
 )
 
