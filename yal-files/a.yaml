@@ -1,0 +1,6 @@
+apiVersion: example.example.com/v1
+kind: HlTest
+metadata:
+  name: example-hltest
+spec:
+  user: "helin"  # 这里替换为你想要传递的用户名
