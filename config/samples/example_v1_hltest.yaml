@@ -2,7 +2,7 @@ apiVersion: example.example.com/v1
 kind: HlTest
 metadata:
   labels:
-    app.kubernetes.io/name: hltest-operator
+    app.kubernetes.io/name: github.com/helin0815/crd-learn
     app.kubernetes.io/managed-by: kustomize
   name: hltest-sample
 spec:

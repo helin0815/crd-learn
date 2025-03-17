@@ -37,8 +37,8 @@ import (
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
-	examplev1 "hltest-operator/api/v1"
-	"hltest-operator/internal/controller"
+	examplev1 "github.com/helin0815/crd-learn/api/v1"
+	"github.com/helin0815/crd-learn/internal/controller"
 	// +kubebuilder:scaffold:imports
 )
 

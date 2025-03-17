@@ -27,20 +27,20 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"hltest-operator/test/utils"
+	"github.com/helin0815/crd-learn/test/utils"
 )
 
 // namespace where the project is deployed in
-const namespace = "hltest-operator-system"
+const namespace = "github.com/helin0815/crd-learn-system"
 
 // serviceAccountName created for the project
-const serviceAccountName = "hltest-operator-controller-manager"
+const serviceAccountName = "github.com/helin0815/crd-learn-controller-manager"
 
 // metricsServiceName is the name of the metrics service of the project
-const metricsServiceName = "hltest-operator-controller-manager-metrics-service"
+const metricsServiceName = "github.com/helin0815/crd-learn-controller-manager-metrics-service"
 
 // metricsRoleBindingName is the name of the RBAC that will be created to allow get the metrics data
-const metricsRoleBindingName = "hltest-operator-metrics-binding"
+const metricsRoleBindingName = "github.com/helin0815/crd-learn-metrics-binding"
 
 var _ = Describe("Manager", Ordered, func() {
 	var controllerPodName string
@@ -173,7 +173,7 @@ var _ = Describe("Manager", Ordered, func() {
 		It("should ensure the metrics endpoint is serving metrics", func() {
 			By("creating a ClusterRoleBinding for the service account to allow access to metrics")
 			cmd := exec.Command("kubectl", "create", "clusterrolebinding", metricsRoleBindingName,
-				"--clusterrole=hltest-operator-metrics-reader",
+				"--clusterrole=github.com/helin0815/crd-learn-metrics-reader",
 				fmt.Sprintf("--serviceaccount=%s:%s", namespace, serviceAccountName),
 			)
 			_, err := utils.Run(cmd)

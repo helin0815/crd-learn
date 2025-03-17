@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	examplev1 "hltest-operator/api/v1"
+	examplev1 "github.com/helin0815/crd-learn/api/v1"
 )
 
 // HlTestReconciler reconciles a HlTest object

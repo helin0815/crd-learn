@@ -1,12 +1,12 @@
 # Adds namespace to all resources.
-namespace: hltest-operator-system
+namespace: github.com/helin0815/crd-learn-system
 
 # Value of this field is prepended to the
 # names of all resources, e.g. a deployment named
 # "wordpress" becomes "alices-wordpress".
 # Note that it should also match with the prefix (text before '-') of the namespace
 # field above.
-namePrefix: hltest-operator-
+namePrefix: github.com/helin0815/crd-learn-
 
 # Labels to add to all resources and selectors.
 #labels:

@@ -27,7 +27,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	examplev1 "hltest-operator/api/v1"
+	examplev1 "github.com/helin0815/crd-learn/api/v1"
 )
 
 var _ = Describe("HlTest Controller", func() {
